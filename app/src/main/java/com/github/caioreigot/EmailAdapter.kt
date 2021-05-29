@@ -16,11 +16,10 @@ import androidx.annotation.ColorInt
 import androidx.recyclerview.widget.RecyclerView
 import com.github.caioreigot.model.Email
 
-// Herdando de RecyclerView.Adapter<EmailAdapter.EmailViewHolder>()
 class EmailAdapter(val emails: MutableList<Email>) : RecyclerView.Adapter<EmailAdapter.EmailViewHolder>() {
 
-    // Herdando de RecyclerView.ViewHolder(itemView)
     inner class EmailViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        
         private val txtIcon: TextView = itemView.findViewById(R.id.txt_icon)
         private val txtUser: TextView = itemView.findViewById(R.id.txt_user)
         private val txtSubject: TextView = itemView.findViewById(R.id.txt_subject)
